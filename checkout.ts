@@ -58,7 +58,7 @@ const price: {
   vga: 30.0,
 };
 
-let pricingRules = {
+const pricingRules = {
   atvCost(atvQty: number) {
     return atvQty > 2 ? atvQty * price.atv - price.atv : atvQty * price.atv;
   },
